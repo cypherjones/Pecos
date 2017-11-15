@@ -19,8 +19,8 @@ global $post;
 
 ?>
 
-<div class="event-wrapper">
-	<div class="event-box">
+<ul class="event-wrapper">
+	<li class="event-box">
 		<div class="event-img">
 			<img src="<?php echo tribe_event_featured_image( null, 'medium', false, false ); ?>" alt="<?php the_title(); ?> event image">
 		</div>
@@ -32,6 +32,6 @@ global $post;
 		<div class="event-time">
 			<?php echo tribe_events_event_schedule_details(); ?>
 		</div>
-	</div>
-</div>
+	</li>
+</ul>
 
