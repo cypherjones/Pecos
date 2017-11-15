@@ -33,11 +33,11 @@ jQuery(document).ready(function($){
 			if($(this).height() > thisBoxHeight) {
 				thisBoxHeight = $(this).height();
 			}
-
-			// thisBoxHeight = $(this).height();
 			console.log(thisBoxHeight);
 		})
-	
+		$('#event').css({
+			'height': thisBoxHeight;
+		})
 	});
 });
 
