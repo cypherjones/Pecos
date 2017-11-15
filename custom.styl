@@ -1,86 +1,178 @@
-@font-face
-  font-family: 'barley_scriptregular'
-  src: url('fonts/barleyscript-regular-webfont.woff2') format('woff2'),
-         url('fonts/barleyscript-regular-webfont.woff') format('woff')
-  font-weight: normal
-  font-style: normal
+html .woocommerce .woocommerce-message,
+html .woocommerce .woocommerce-error,
+html .woocommerce .woocommerce-info
+  background-color: #900025 !important
 
-@font-face
-  font-family: 'heinbergtextured'
-  src: url('fonts/heinberg-textured-webfont.woff2') format('woff2'),
-         url('fonts/heinberg-textured-webfont.woff') format('woff')
-  font-weight: normal
-  font-style: normal
-
-h1,
-h2,
-h3,
-h4,
-#page-header-bg h1,
-.nectar-box-roll .overlaid-content h1
-  font-family: 'heinbergtextured'
-
-#page-header-bg h1,
-.nectar-box-roll .overlaid-content h1
-  line-height: 70px !important
-  font-size: 55px !important
-
-h5,
-h6
-  font-family: 'barley_scriptregular'
-
-.single .container-wrap.no-sidebar
-  padding-top: 0px
-
-.single .container.main-content
-  background-color: #fff
+.select2-results__option
   color: #000
-  padding: 20px
-  position: relative
-  top: -20px
 
-.meta-comment-count
+.tribe_events.type-tribe_events
+  height: 100% !important
+  margin-bottom: 45px
+
+.ticket-btn-holder
+  margin-top: 20px
+
+.btn.event-btn
+  background-color: #fff
+  /*margin-top: 20px;*/
+
+.btn.event-btn:hover
+  color: #900025
+
+/* gravity forms */
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.gform_wrapper textarea.medium
+  background-color: white !important
+
+#gform_submit_button_2,
+body #gform_submit_button_2:hover,
+body #gform_sumbit_button_2:focus,
+#gform_submit_button_3,
+body #gform_submit_button_3:hover,
+body #gform_sumbit_button_3:focus
+  background-color: #900025
+
+::-webkit-input-placeholder
+  /* Chrome/Opera/Safari */
+  color: #900025
+
+::-moz-placeholder
+  /* Firefox 19+ */
+  color: #900025
+
+:-ms-input-placeholder
+  /* IE 10+ */
+  color: #900025
+
+:-moz-placeholder
+  /* Firefox 18- */
+  color: #900025
+
+body .gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit]
+  padding: 18px !important
+  background-color: #000
+
+.gform_wrapper .gform_footer input[type=submit]:hover,
+.gform_wrapper .gform_footer input[type=submit]:focus
+  background-color: #000 !important
+  color: #FFF !important
+
+@media only screen and (min-width: 641px)
+  .gform_wrapper form.gf_simple_horizontal div.gform_body ul.top_label li.gfield
+    padding-right: 0em !important
+
+/* events on the front page */
+.home .tribe-bar-filters-inner,
+.home #tribe-events-bar,
+.home .tribe-events-list-photo-description.tribe-events-content,
+.home .tribe-events-page-title,
+.home .tribe-events-photo #tribe-events-footer,
+.home .tribe-events-button
   display: none
 
-/*
- - Shopify Integrations
- -------------------------*/
-.shopify-buy-frame--product
-  margin: 15px auto
+body[data-header-color="dark"] header#top nav ul li a,
+body[data-header-color="dark"] #search-outer input,
+body[data-header-color="dark"] #header-secondary-outer nav >ul >li >a,
+body[data-header-color="dark"] #header-secondary-outer nav >ul >li >a span.sf-sub-indicator i,
+body[data-header-color="dark"] header#top #logo,
+body[data-header-color="dark"] header#top nav ul #search-btn a span,
+.ascend[data-header-color="dark"] #header-outer .cart-menu .cart-icon-wrap .icon-salient-cart
+  color: #FFF
 
-.shopify-buy__btn
-  border-radius: 0 !important
+.tribe-mini-calendar-event .tribe-event-image,
+.archive .tribe-events-list-photo-description.tribe-events-content,
+.archive #tribe-events-bar,
+.tribe-events-event-meta.primary
+  display: none
 
-body .shopify-buy__product-description .cooking-rec
-  display: inline-block
-  float: left
+#tribe-events-adv-list-widget-3 .tribe-event-featured
+  height: 60px !important
 
-/*
- - Dealer Integrations
- -------------------------*/
-body #wpsl-search-wrap,
-body #wpsl-stores
-  color: #000
+.tribe-events-adv-list-widget .tribe-event-featured .tribe-mini-calendar-event
+  background: transparent !important
 
-/*
- - Fix Header Search
- -------------------------*/
-header#top nav ul #search-btn > div
-  border-left: none !important
+.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap,
+.tribe-events-list .tribe-events-loop .tribe-event-featured,
+.tribe-events-list #tribe-events-day.tribe-events-loop .tribe-event-featured,
+.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap,
+.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap:hover
+  background: #900025 !important
+  border: none !important
 
-@media only screen and (max-width: 1300px) and (min-width: 1001px)
-  #header-outer header#top nav > ul.buttons
-    margin-right: 149px !important
+/* menu page */
+.item-padding
+  margin-bottom: 75px
 
-/*
- - Pellet Page Edits for SEM
- -----------------------------------*/
-.pellet-page .pellet-header
-  text-align: center
+.nectar_food_menu_item .inner .item_name h3
+  color: #900025 !important
 
-/*
- - gravity form help
- -----------------------------------*/
-#gform_wrapper_4
-  color: #000
+.tribe-bar-disabled,
+.tribe-events-list-photo-description.tribe-events-content
+  display: none !important
 
+.type-tribe_events.tribe-events-photo-event .tribe-events-photo-event-wrap
+  border: none !important
+  background-color: #900025
+  height: 100%
+
+.tribe-events-list .tribe-events-photo-event .tribe-events-event-details
+  /*height: 100% !important;*/
+
+.type-tribe_events
+  min-height: 387px !important
+  background-color: #900025 !important
+
+#tribe-events-photo-events .tribe-event-featured .tribe-events-event-image,
+.tribe-events-list .tribe-events-loop .tribe-events-photo-event .tribe-events-event-image
+  height: 262px
+  overflow: hidden
+
+.tribe-events-list-event-title a
+  color: #FFF !important
+
+/* other styles */
+.type-tribe_events:not(.tribe-event-featured) .tribe-events-list-event-title
+  line-height: 55px !important
+  margin-bottom: -8px !important
+
+body .nectar_food_menu_item
+  margin-bottom: 60px
+
+/* shop */
+.widget.woocommerce h4
+  color: #900025 !important
+
+body:not(.woocommerce-cart) .main-content table,
+body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1)
+  background-color: transparent !important
+  color: #FFF
+
+.woocommerce table.shop_attributes th,
+.woocommerce-page table.shop_attributes th
+  color: #FFF !important
+
+/* menu */
+.sf-menu li ul li a:hover
+  color: #FFF !important
+
+#slide-out-widget-area .inner .off-canvas-menu-container li a
+  font-size: 21px
+
+@media screen and (max-width: 768px)
+  .type-tribe_events
+    height: 390px !important
+
+body
+  line-height: 30px
+
+#footer-outer .widget
+  margin-bottom: 0
+
+
+/* event page styles
+-------------------------------------- */
+.event-loop
+  display flex
+  width 33.33%
