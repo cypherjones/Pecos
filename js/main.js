@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 
 		let boxHeight = 0;
 
-		$(this).find('#event')each(function(){
+		$(this).find('#event', this)each(function(){
 
 			if($(this).height() > boxHeight) {
 				boxHeight = $(this).height();
@@ -37,3 +37,4 @@ console.log(boxHeight);
 		
 	});
 });
+
