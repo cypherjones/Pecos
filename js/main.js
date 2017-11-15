@@ -30,10 +30,14 @@ jQuery(document).ready(function($){
 
 		$(this).find('.event-container', this).each(function(){
 
-			thisBoxHeight = $(this).height();
+			if($(this).height() > thisBoxHeight) {
+				thisBoxHeight = $(this).height();
+			}
+
+			// thisBoxHeight = $(this).height();
 			console.log(thisBoxHeight);
 		})
-		console.log(thisBoxHeight);
+	
 	});
 });
 
