@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 			
 			console.log(thisBoxHeight);
 
-			$(this).css({
+			$('event-container', this).css({
 				'height': thisBoxHeight,
 			});
 
@@ -24,4 +24,3 @@ jQuery(document).ready(function($){
 	});
 
 });
-
