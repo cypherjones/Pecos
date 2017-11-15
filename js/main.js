@@ -31,6 +31,7 @@ jQuery(document).ready(function($){
 		$(this).find('.event-container', this).each(function(){
 
 			thisBoxHeight = $(this).height();
+			console.log(thisBoxHeight);
 		})
 		console.log(thisBoxHeight);
 	});
