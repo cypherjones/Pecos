@@ -19,6 +19,8 @@ global $post;
 
 ?>
 
+
+
 <div class="tribe-events-photo-event-wrap">
 
 	<?php echo tribe_event_featured_image( null, 'medium' ); ?>
