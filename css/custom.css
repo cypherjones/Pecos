@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'barley_scriptregular';
+    src: url('fonts/barleyscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/barleyscript-regular-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'heinbergtextured';
+    src: url('fonts/heinberg-textured-webfont.woff2') format('woff2'),
+         url('fonts/heinberg-textured-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+#page-header-bg h1, 
+.nectar-box-roll .overlaid-content h1 {
+  font-family: 'heinbergtextured' ;
+}
+#page-header-bg h1, .nectar-box-roll .overlaid-content h1 {
+  line-height: 70px !important;
+  font-size: 55px !important;
+}
+h5,
+h6 {
+  font-family: 'barley_scriptregular';
+}
+
+.single .container-wrap.no-sidebar {
+  padding-top: 0px;
+}
+.single .container.main-content {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.meta-comment-count {
+  display: none;
+}
+
+/*
+ - Shopify Integrations
+ -------------------------*/
+.shopify-buy-frame--product {
+  margin: 15px auto;
+}
+.shopify-buy__btn {
+  border-radius: 0 !important;
+}
+body .shopify-buy__product-description .cooking-rec {
+  display: inline-block;
+  float: left;
+}
+/*
+ - Dealer Integrations
+ -------------------------*/
+body #wpsl-search-wrap,
+body #wpsl-stores {
+  color: #000;
+}
+/*
+ - Fix Header Search
+ -------------------------*/
+header#top nav ul #search-btn > div {
+  border-left: none !important;
+}
+@media only screen and (max-width: 1300px) and (min-width: 1001px) {
+  #header-outer header#top nav > ul.buttons {
+      margin-right: 149px !important;
+  }
+}
+/*
+ - Pellet Page Edits for SEM
+ -----------------------------------*/
+ .pellet-page .pellet-header {
+  text-align: center;
+ }
+/*
+ - gravity form help
+ -----------------------------------*/
+ #gform_wrapper_4 {
+  color: #000;
+ }
