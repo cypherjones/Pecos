@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 			}
 			console.log(thisBoxHeight);
 		})
-		$('#event').css({
+		$('#event', this).css({
 			'height': thisBoxHeight,
 		});
 	});
