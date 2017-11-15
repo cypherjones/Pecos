@@ -19,7 +19,16 @@ global $post;
 
 ?>
 
-
+<div class="event-wrapper">
+	<div class="event-box">
+		<div class="event-img">
+			<?php echo tribe_event_featured_image( null, 'medium' ); ?>
+		</div>
+		<div class="event-title">
+			<?php the_title(); ?> 
+		</div>
+	</div>
+</div>
 
 <div class="tribe-events-photo-event-wrap">
 
