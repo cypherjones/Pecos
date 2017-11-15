@@ -25,14 +25,15 @@ jQuery(document).ready(function($){
 
 	$('#the-event-loop').each(function(){
 
-		let boxHeight = 0;
+		let boxHeight = 0,
+		    thisBoxHeight = 0;
+
 
 		$(this).find('event-wrapper', this).each(function(){
 
 			thisBoxHeight = $(this).height();
-			console.log(thisBoxHeight);
 		})
-		
+		console.log(thisBoxHeight);
 	});
 });
 
