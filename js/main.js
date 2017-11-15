@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 			let heightestBox = 0;
 			
 			// find each title and determine the highest
-			$(this).find('.event-box .event-title').each(function(){
+			$(this).find('.event-box').each(function(){
 			// $(this).find('.event-box .event-title', this).each(function(){
 				
 				// make the height of all the titles the heighest
@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 
 			// make an inline css based on the
 			// heighest title element
-			$('.event-title', this).css({
+			$('.event-box', this).css({
 				'height': heightestBox,
 			});
 
