@@ -10,7 +10,7 @@ $('.event-wrapper').each(function(){
 			if($(this).height() > heightestBox) {
 				heightestBox = $(this).height();
 			}
-			
+			console.log(heightestBox);
 		});
 
 		// make an inline css based on the
