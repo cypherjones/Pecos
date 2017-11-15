@@ -1,11 +1,12 @@
 jQuery(document).ready(function($){
-	$('.event-box').each(function(){
+	$('.event-wrapper').each(function(){
 			
 			// cache the highest element
 			let heightestBox = 0;
 			
 			// find each title and determine the highest
-			$(this).find('.event-box .event-title', this).each(function(){
+			$(this).find('.event-box .event-title').each(function(){
+			// $(this).find('.event-box .event-title', this).each(function(){
 				
 				// make the height of all the titles the heighest
 				if($(this).height() > heightestBox) {
