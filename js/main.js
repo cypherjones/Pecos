@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 			
 			console.log('the title ' + titleHeight);
 
-			$(this).css({
+			$('event-title').css({
 				'height': titleHeight,
 			});
 
