@@ -22,7 +22,7 @@ global $post;
 <div class="event-wrapper">
 	<div class="event-box">
 		<div class="event-img">
-			<?php echo tribe_event_featured_image( null, 'medium' ); ?>
+			<?php echo tribe_event_featured_image( null, 'medium', false ); ?>
 		</div>
 		<div class="event-title">
 			<a href="<?php echo esc_url( tribe_get_event_link() ); ?> ">
