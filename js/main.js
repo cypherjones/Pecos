@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	$('.event-wrapper').each(function(){
+	$('.event-box').each(function(){
 			
 			// cache the highest element
 			let heightestBox = 0;
