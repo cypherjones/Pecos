@@ -25,7 +25,12 @@ global $post;
 			<?php echo tribe_event_featured_image( null, 'medium' ); ?>
 		</div>
 		<div class="event-title">
-			<?php the_title(); ?> 
+			<a href="<?php echo esc_url( tribe_get_event_link() ); ?> ">
+				<?php the_title(); ?>
+			</a>
+		</div>
+		<div class="event-time">
+			<?php echo tribe_events_event_schedule_details(); ?>
 		</div>
 	</div>
 </div>
