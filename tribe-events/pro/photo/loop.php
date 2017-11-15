@@ -23,7 +23,7 @@ $more = false;
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 
 		<!-- Event  -->
-		<div id="event">
+		<div id="event" class="event-container">
 			<?php tribe_get_template_part( 'pro/photo/single', 'event' ) ?> 
 		</div>
 
