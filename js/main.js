@@ -27,9 +27,11 @@ jQuery(document).ready(function($){
 
 		let boxHeight = 0;
 
-		if($(this).height() > boxHeight) {
-			boxHeight = $(this).height();
-		};
+		$(this).each(function(){
+			if($(this).height() > boxHeight) {
+				boxHeight = $(this).height();
+			};
+		})
 		console.log(boxHeight);
 	});
 });
