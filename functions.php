@@ -361,9 +361,9 @@ function nectar_main_styles() {
 			wp_enqueue_style('nectarslider');
 			wp_enqueue_style('nectar-portfolio');
 		}
-		if(is_page( 'our-events' )) {
-			wp_enqueue_style('bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", false, null, 'all' );
-		}
+		// if(is_page( 'our-events' )) {
+		// 	wp_enqueue_style('bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", false, null, 'all' );
+		// }
 		wp_enqueue_style('beefy-custom');
 }
 
