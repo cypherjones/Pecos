@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 
 		});
 
-		$(this).find('.event-container .event-container .event-wrapper .event-title', this).each(function(){
+		$(this).find('.event-container .event-wrapper .event-title', this).each(function(){
 
 			if($(this).height() > titleHeight) {
 				titleHeight = $(this).height();
