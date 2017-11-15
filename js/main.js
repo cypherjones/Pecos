@@ -36,8 +36,8 @@ jQuery(document).ready(function($){
 			console.log(thisBoxHeight);
 		})
 		$('#event').css({
-			'height': thisBoxHeight;
-		})
+			'height': thisBoxHeight,
+		});
 	});
 });
 
