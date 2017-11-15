@@ -27,12 +27,10 @@ jQuery(document).ready(function($){
 
 		let boxHeight = 0;
 
-		$(this).find('#event', this).each(function(){
+		$(this).find('event-wrapper').each(function(){
 
-			if($(this).height() > boxHeight) {
-				boxHeight = $(this).height();
-			};
-console.log(boxHeight);
+			thisBoxHeight = $(this).height();
+			console.log(thisBoxHeight);
 		})
 		
 	});
