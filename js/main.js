@@ -28,8 +28,7 @@ jQuery(document).ready(function($){
 		let boxHeight = 0,
 		    thisBoxHeight = 0;
 
-
-		$(this).find('event-wrapper', this).each(function(){
+		$(this).find('.event-wrapper', this).each(function(){
 
 			thisBoxHeight = $(this).height();
 		})
