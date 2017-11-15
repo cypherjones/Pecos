@@ -34,10 +34,11 @@ jQuery(document).ready(function($){
 				thisBoxHeight = $(this).height();
 			}
 			console.log(thisBoxHeight);
-		})
-		$('#event', this).css({
+			$('#event', this).css({
 			'height': thisBoxHeight,
 		});
+		})
+		
 	});
 });
 
