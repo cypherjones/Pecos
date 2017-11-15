@@ -1,31 +1,8 @@
 jQuery(document).ready(function($){
-	// $('.event-wrapper').each(function(){
-			
-	// 		// cache the highest element
-	// 		let heightestBox = 0;
-			
-	// 		// find each title and determine the highest
-	// 		$(this).find('.event-box').each(function(){
-	// 		// $(this).find('.event-box .event-title', this).each(function(){
-				
-	// 			// make the height of all the titles the heighest
-	// 			if($(this).height() > heightestBox) {
-	// 				heightestBox = $(this).height();
-	// 			}
-	// 			console.log(heightestBox);
-	// 		});
-
-	// 		// make an inline css based on the
-	// 		// heighest title element
-	// 		$('.event-box', this).css({
-	// 			'height': heightestBox,
-	// 		});
-
-	// 	});
 
 	$('#the-event-loop').each(function(){
 
-		let boxHeight = 0,
+		let titleHeight = 0,
 		    thisBoxHeight = 0;
 
 		$(this).find('.event-container', this).each(function(){
@@ -37,10 +14,26 @@ jQuery(document).ready(function($){
 			console.log(thisBoxHeight);
 
 			$(this).css({
-			'height': thisBoxHeight,
+				'height': thisBoxHeight,
+			});
+
 		});
-		})
-		
+
+		$(this).find('.event-container .event-container .event-wrapper .event-title', this).each(function(){
+
+			if($(this).height() > titleHeight) {
+				titleHeight = $(this).height();
+			}
+			
+			console.log('the title ' + titleHeight);
+
+			$(this).css({
+				'height': titleHeight,
+			});
+
+		});
+
 	});
+
 });
 
