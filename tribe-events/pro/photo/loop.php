@@ -18,7 +18,7 @@ $more = false;
 
 ?>
 
-<div class="event-loop">
+<div id="the-event-loop" class="event-loop">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 

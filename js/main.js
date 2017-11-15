@@ -23,15 +23,17 @@ jQuery(document).ready(function($){
 
 	// 	});
 
-	$('#event').each(function(){
+	$('#the-event-loop').each(function(){
 
 		let boxHeight = 0;
 
-		$(this).each(function(){
+		$(this).find('#event')each(function(){
+
 			if($(this).height() > boxHeight) {
 				boxHeight = $(this).height();
 			};
+console.log(boxHeight);
 		})
-		console.log(boxHeight);
+		
 	});
 });
