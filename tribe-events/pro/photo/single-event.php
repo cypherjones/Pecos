@@ -22,7 +22,7 @@ global $post;
 <div class="event-wrapper">
 	<div class="event-box">
 		<div class="event-img">
-			<img src="<?php echo tribe_event_featured_image( null, 'medium', false, false ); ?>" alt="<?php the_title(); ?> event image">
+			<img src="<?php echo tribe_event_featured_image( null, 'large', false, false ); ?>" alt="<?php the_title(); ?> event image">
 		</div>
 		<div class="event-meta">
 			<div class="event-title">
