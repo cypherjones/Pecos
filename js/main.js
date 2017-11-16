@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-$('#the-event-loop').each(function(){
+$('#event').each(function(){
 		
 		// // cache the highest element
 		let heightestBox = 0,
@@ -22,18 +22,18 @@ $('#the-event-loop').each(function(){
 		// 	'height': heightestBox,
 		// });
 
-		// $(this).find('.event-meta').each(function(){
+		$(this).find('.event-meta').each(function(){
 			
-		// 	// make the height of all the titles the heighest
-		// 	if($(this).height() > titleHeight) {
-		// 		titleHeight = $(this).height();
-		// 	}
-		// 	console.log(titleHeight);
-		// });
+			// make the height of all the titles the heighest
+			if($(this).height() > titleHeight) {
+				titleHeight = $(this).height();
+			}
+			console.log(titleHeight);
+		});
 
-		// $('.event-meta', this).css({
-		// 	'height': titleHeight,
-		// });
+		$('.event-meta', this).css({
+			'height': titleHeight,
+		});
 
 	});
 
