@@ -20,7 +20,6 @@ global $post;
 ?>
 
 <div class="event-wrapper">
-	<div class="event-box">
 		<div class="event-img">
 			<img src="<?php echo tribe_event_featured_image( null, 'large', false, false ); ?>" alt="<?php the_title(); ?> event image">
 		</div>
@@ -35,6 +34,5 @@ global $post;
 				
 			</div>
 		</div>
-	</div>
 </div>
 
