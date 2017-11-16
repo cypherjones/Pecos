@@ -28,10 +28,11 @@ global $post;
 			<div class="event-title">
 				<a href="<?php echo esc_url( tribe_get_event_link() ); ?> ">
 					<h2><?php the_title(); ?></h2>
+					<?php echo tribe_events_event_schedule_details(); ?>
 				</a>
 			</div>
 			<div class="event-time">
-				<?php echo tribe_events_event_schedule_details(); ?>
+				
 			</div>
 		</div>
 	</div>
