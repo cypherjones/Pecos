@@ -31,7 +31,7 @@ $('#the-event-loop').each(function(){
 			
 		});
 
-		$('.event-title', this).css({
+		$('.event-meta', this).css({
 			'height': titleHeight,
 		});
 
