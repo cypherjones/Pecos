@@ -6,34 +6,34 @@ $('#the-event-loop').each(function(){
 		let heightestBox = 0,
 		    titleHeight = 0;
 		
-		// // find each title and determine the highest
-		// $(this).find('.event-container', this).each(function(){
-			
-		// 	// make the height of all the titles the heighest
-		// 	if($(this).height() > heightestBox) {
-		// 		heightestBox = $(this).height();
-		// 	}
-			
-		// });
-
-		// // make an inline css based on the
-		// // heighest title element
-		// $('.event-container', this).css({
-		// 	'height': heightestBox,
-		// });
-
-		$(this).find('.event-meta', this).each(function(){
+		// find each title and determine the highest
+		$(this).find('.event-container', this).each(function(){
 			
 			// make the height of all the titles the heighest
-			if($(this).height() > titleHeight) {
-				titleHeight = $(this).height();
+			if($(this).height() > heightestBox) {
+				heightestBox = $(this).height();
 			}
-			console.log(titleHeight);
+			
 		});
 
-		$('.event-meta', this).css({
-			'height': titleHeight,
+		// make an inline css based on the
+		// heighest title element
+		$('.event-container', this).css({
+			'height': heightestBox,
 		});
+
+		// $(this).find('.event-meta', this).each(function(){
+			
+		// 	// make the height of all the titles the heighest
+		// 	if($(this).height() > titleHeight) {
+		// 		titleHeight = $(this).height();
+		// 	}
+		// 	console.log(titleHeight);
+		// });
+
+		// $('.event-meta', this).css({
+		// 	'height': titleHeight,
+		// });
 
 	});
 
