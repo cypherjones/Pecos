@@ -28,7 +28,7 @@ $('#the-event-loop').each(function(){
 			if($(this).height() > titleHeight) {
 				titleHeight = $(this).height();
 			}
-			
+			console.log(titleHeight);
 		});
 
 		$('.event-meta', this).css({
