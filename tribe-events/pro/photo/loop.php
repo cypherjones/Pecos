@@ -22,22 +22,16 @@ $more = false;
 	<h2>Memberships</h2>
 </div>
 
-<div class="tribe-events-loop tribe-clearfix" id="tribe-events-photo-events">
-	<div class="tribe-events-photo-grid-sizer">
-		<!-- .tribe-events-photo-grid-sizer empty element, only used for element sizing -->
-	</div>
-
+<div id="the-event-loop" class="event-loop">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 
 		<!-- Event  -->
-		<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?>">
+		<div id="event" class="event-container">
 			<?php tribe_get_template_part( 'pro/photo/single', 'event' ) ?> 
 		</div>
 
 		<?php do_action( 'tribe_events_inside_after_loop' ); ?>
 	<?php endwhile; ?>
-	<div class="tribe-events-photo-gutter-sizer">
-		<!-- .tribe-events-photo-gutter-sizer empty element, only used for element sizing -->
-	</div>
-</div><!-- .tribe-events-loop -->
+</div>
+
