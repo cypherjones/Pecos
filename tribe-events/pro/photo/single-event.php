@@ -21,7 +21,10 @@ global $post;
 
 <!-- <div class="event-wrapper">
  --><div class="event-img">
-			<img src="<?php echo tribe_event_featured_image( null, 'large', false, true ); ?>" alt="<?php the_title(); ?> event image">
+ 			<a href="<?php echo esc_url( tribe_get_event_link() ); ?>">
+				<img src="<?php echo tribe_event_featured_image( null, 'large', false, false ); ?>" alt="<?php the_title(); ?> event image">
+			</a>
+			
 		</div>
 		<div class="event-meta">
 			<div class="event-title">
