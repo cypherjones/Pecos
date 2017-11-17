@@ -39,7 +39,7 @@ $('#the-event-loop').each(function(){
 			if($(this).height() > timeHeight) {
 				timeHeight = $(this).height();
 			}
-			
+			console.log(timeHeight);
 		});
 
 		$('.event-meta', this).css({
