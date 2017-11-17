@@ -29,15 +29,16 @@ $('#the-event-loop').each(function(){
 				titleHeight = $(this).height();
 			}
 			console.log(titleHeight);
+			$metaHeight = $('.event-title').height() + $('.event-time').height()
+
+			console.log('the ' + $metaHeight)
 		});
 
 		$('.event-meta', this).css({
 			'height': titleHeight,
 		});
 
-		$metaHeight = $('.event-title').height() + $('.event-time').height()
-
-		console.log($metaHeight)
+		
 
 	});
 
