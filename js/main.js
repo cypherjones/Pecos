@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-$('#event').each(function(){
+$('#the-event-loop').each(function(){
 		
 		// // cache the highest element
 		let heightestBox = 0,
