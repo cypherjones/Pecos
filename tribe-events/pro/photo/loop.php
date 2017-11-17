@@ -18,6 +18,10 @@ $more = false;
 
 ?>
 
+<div class="testing">
+	<h2>Memberships</h2>
+</div>
+
 <div id="the-event-loop" class="event-loop">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
