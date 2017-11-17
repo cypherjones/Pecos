@@ -23,26 +23,17 @@ $('#the-event-loop').each(function(){
 
 	});
 
-	$('.event-container').each(function(){
+	$('#event').each(function(){
 		
 		// // cache the highest element
 		let metaBox = 0;
 		
 		// find each title and determine the highest
-		$(this).find('.event-meta', this).each(function(){
-			
-			// make the height of all the titles the heighest
-			if($(this).height() > metaBox) {
-				metaBox = $(this).height();
+		$(this).find('.event-meta').each(function(){
+			if( $(this.height() > 0) ) {
+				console.log('yes');
 			}
-			
-		});
-
-		// make an inline css based on the
-		// heighest title element
-		$('.event-meta', this).css({
-			'height': metaBox,
-		});
+		})
 
 	});
 
