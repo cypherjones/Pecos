@@ -26,20 +26,20 @@ jQuery(document).ready(function($){
 
 		});
 
-		$('#event').each(function(){
+		// $('#event').each(function(){
 			
-			// // cache the highest element
-			let metaBox = 0;
+		// 	// // cache the highest element
+		// 	let metaBox = 0;
 			
-			// find each title and determine the highest
-			$(this).find('.event-meta').each(function(){
-				if( $(this).height() > 0) {
-					console.log('yes');
-				} else {
-					console.log('no');
-				}
-			});
+		// 	// find each title and determine the highest
+		// 	$(this).find('.event-meta').each(function(){
+		// 		if( $(this).height() > 0) {
+		// 			console.log('yes');
+		// 		} else {
+		// 			console.log('no');
+		// 		}
+		// 	});
 
-		});
+		// });
 
 	});
