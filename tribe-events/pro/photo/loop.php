@@ -18,16 +18,16 @@ $more = false;
 
 ?>
 
-<ul id="the-event-loop" class="event-loop">
+<div id="the-event-loop" class="event-loop">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 
 		<!-- Event  -->
-		<li id="event" class="event-container">
+		<div id="event" class="event-container">
 			<?php tribe_get_template_part( 'pro/photo/single', 'event' ) ?> 
-		</li>
+		</div>
 
 		<?php do_action( 'tribe_events_inside_after_loop' ); ?>
 	<?php endwhile; ?>
-</ul>
+</div>
 
