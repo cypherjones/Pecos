@@ -23,23 +23,23 @@ $('#the-event-loop').each(function(){
 			'height': heightestBox,
 		});
 
-		$(this).find('.event-time').each(function(){
+		$(this).find('.event-title').each(function(){
 			
 			// make the height of all the titles the heighest
 			if($(this).height() > titleHeight) {
 				titleHeight = $(this).height();
 			}
-			console.log(titleHeight);
+			console.log('title height is ' + titleHeight);
 		});
 
 		// find each title and determine the highest
-		$(this).find('.event-title', this).each(function(){
+		$(this).find('.event-time', this).each(function(){
 			
 			// make the height of all the titles the heighest
 			if($(this).height() > timeHeight) {
 				timeHeight = $(this).height();
 			}
-			console.log(timeHeight);
+			console.log('time height is' + timeHeight);
 		});
 
 		$('.event-meta', this).css({
