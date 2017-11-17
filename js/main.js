@@ -1,8 +1,5 @@
 
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	console.log('let the code ride, brother');
-} else {
 
 jQuery(document).ready(function($){
 
@@ -46,4 +43,3 @@ jQuery(document).ready(function($){
 		});
 
 	});
-};
