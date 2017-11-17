@@ -23,7 +23,7 @@ $('#the-event-loop').each(function(){
 			'height': heightestBox,
 		});
 
-		$(this).find('.event-title').each(function(){
+		$(this).find('.event-title', this).each(function(){
 			
 			// make the height of all the titles the heighest
 			if($(this).height() > titleHeight) {
