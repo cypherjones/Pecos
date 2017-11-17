@@ -27,8 +27,8 @@ global $post;
 			<div class="event-title">
 				<a href="<?php echo esc_url( tribe_get_event_link() ); ?> ">
 					<h2><?php the_title(); ?></h2>
-					<?php echo tribe_events_event_schedule_details(); ?>
 				</a>
+				<p><?php echo tribe_events_event_schedule_details(); ?></p>
 			</div>
 			<div class="event-time">
 				
