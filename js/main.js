@@ -4,7 +4,8 @@ $('#the-event-loop').each(function(){
 		
 		// // cache the highest element
 		let heightestBox = 0,
-		    titleHeight = 0;
+		    titleHeight = 0,
+		    timeHeight = 0;
 		
 		// find each title and determine the highest
 		$(this).find('.event-container', this).each(function(){
@@ -22,20 +23,27 @@ $('#the-event-loop').each(function(){
 			'height': heightestBox,
 		});
 
-		$(this).find('.event-meta').each(function(){
+		$(this).find('.event-time').each(function(){
 			
 			// make the height of all the titles the heighest
 			if($(this).height() > titleHeight) {
 				titleHeight = $(this).height();
 			}
 			console.log(titleHeight);
-			$metaHeight = $('.event-title').height() + $('.event-time').height()
+		});
 
-			console.log('the ' + $metaHeight)
+		// find each title and determine the highest
+		$(this).find('.event-title', this).each(function(){
+			
+			// make the height of all the titles the heighest
+			if($(this).height() > timeHeight) {
+				timeHeight = $(this).height();
+			}
+			
 		});
 
 		$('.event-meta', this).css({
-			'height': titleHeight,
+			'height': titleHeight + timeHeight,
 		});
 
 		
