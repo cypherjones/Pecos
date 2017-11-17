@@ -23,7 +23,7 @@ $('#the-event-loop').each(function(){
 
 	});
 
-	$('#event').each(function(){
+	$('.event-container').each(function(){
 		
 		// // cache the highest element
 		let metaBox = 0;
