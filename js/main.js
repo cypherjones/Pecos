@@ -30,10 +30,12 @@ $('#the-event-loop').each(function(){
 		
 		// find each title and determine the highest
 		$(this).find('.event-meta').each(function(){
-			if( $(this.height() > 0) ) {
+			if( $(this).height() > 0) {
 				console.log('yes');
+			} else {
+				console.log('no');
 			}
-		})
+		});
 
 	});
 
