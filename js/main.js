@@ -42,8 +42,10 @@ $('#the-event-loop').each(function(){
 			console.log('time height is' + timeHeight);
 		});
 
+		let totalHeight = titleHeight + timeHeight;
+
 		$('.event-meta', this).css({
-			'height': titleHeight + timeHeight,
+			'height': totalHeight,
 		});
 
 		
