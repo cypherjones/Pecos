@@ -161,7 +161,7 @@ body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1)
   font-size: 21px
 
 @media screen and (max-width: 768px)
-  .type-tribe_events
+  .type-tribe_events:not(.tribe-events-last)
     height: 390px !important
 
 body
@@ -220,6 +220,8 @@ body
   .single-tribe_events .tribe-events-schedule
     background none !important
     border none !important
+  #tribe-events-header
+    display none !important
 // #event
 //   // display flex
 //   width 33.33%
