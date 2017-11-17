@@ -47,5 +47,3 @@ $('#the-event-loop').each(function(){
 	});
 
 });
-
-});
