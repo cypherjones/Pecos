@@ -35,7 +35,7 @@ $('#the-event-loop').each(function(){
 			'height': titleHeight,
 		});
 
-		$metaHeight = $('.event-title').lenght() + $('.event-time')
+		$metaHeight = $('.event-title').length() + $('.event-time').length()
 
 		console.log(metaHeight)
 
