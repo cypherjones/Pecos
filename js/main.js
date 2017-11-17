@@ -35,6 +35,10 @@ $('#the-event-loop').each(function(){
 			'height': titleHeight,
 		});
 
+		$metaHeight = $('.event-title').lenght() + $('.event-time')
+
+		console.log(metaHeight)
+
 	});
 
 });
