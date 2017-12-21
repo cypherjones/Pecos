@@ -38,11 +38,15 @@ jQuery(document).ready(function($){
 	// 		console.log(n);
 	// })
 
-	var n = $('#event').length
+	$('#the-event-loop'),find('#event').each(function(){
+
+			var n = $(this).length
 
 		n++;
 
 	console.log(`we have ${n} events`);
+
+	})
 
 	// make the titles the same size
 	$('#the-event-loop').each(function(){
