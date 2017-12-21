@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 
 		$(this).find('#event').each(function(index, value){
 
-			n = index;
+			n = value;
 
 		})
 		console.log(`we have ${n} events`);
