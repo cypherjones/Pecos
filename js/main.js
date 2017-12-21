@@ -29,6 +29,9 @@ jQuery(document).ready(function($){
 
 		});
 
+	// create rows for each loop of 3 events
+	$('#the-event-loop > #event:lt(3)').wrapAll('<div class="wpb_row"></div>"');
+
 	$('#the-event-loop').each(function(){
 			
 			// // cache the highest element
@@ -54,6 +57,8 @@ jQuery(document).ready(function($){
 			});
 
 		});
+
+
 
 		// $('#event').each(function(){
 			
