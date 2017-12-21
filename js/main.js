@@ -30,12 +30,19 @@ jQuery(document).ready(function($){
 
 	});
 
-	$('#the-event-loop').find('#event:lt(3)').each(function(){
-		// create rows for each loop of 3 events
-			$(this).wrapAll('<div class="row"></div>"');
-	})
+	// $('#the-event-loop').find('#event').each(function(num){
+	// 	// create rows for each loop of 3 events
+	// 		// $(this).wrapAll('<div class="row"></div>"');
+	// 		n = num;
 
+	// 		console.log(n);
+	// })
 
+	var n = $('#event').length
+
+	console.log(`we have ${n} events`);
+
+	// make the titles the same size
 	$('#the-event-loop').each(function(){
 			
 			// // cache the highest element
