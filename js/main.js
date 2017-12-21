@@ -4,6 +4,9 @@
 jQuery(document).ready(function($){
 
 	$('#the-event-loop').each(function(){
+
+			// create rows for each loop of 3 events
+			$('#the-event-loop > #event:lt(3)').wrapAll('<div class="wpb_row"></div>"');
 			
 			// // cache the highest element
 			let heightestBox = 0;
@@ -29,8 +32,7 @@ jQuery(document).ready(function($){
 
 		});
 
-	// create rows for each loop of 3 events
-	$('#the-event-loop > #event:lt(3)').wrapAll('<div class="wpb_row"></div>"');
+
 
 	$('#the-event-loop').each(function(){
 			
