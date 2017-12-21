@@ -40,6 +40,11 @@ jQuery(document).ready(function($){
 	// 		console.log(n);
 	// })
 
+	ind = $('#event').index(this);
+	c = ind.length;
+	
+	console.log(c)
+
 	$('.page-id-67459').find('#the-event-loop #event').each(function(index, value){
 
 		$(this).attr('foo', index);
