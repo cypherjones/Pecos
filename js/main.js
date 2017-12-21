@@ -38,13 +38,16 @@ jQuery(document).ready(function($){
 	// 		console.log(n);
 	// })
 
-	$('#the-event-loop').find('#event').each(function(index, value){
+	$('#the-event-loop').each(function(){
+
+		$(this).find('#event').each(function(index, value){
 
 			var n = index;
 		
 
-	console.log(`we have ${n} events`);
+			console.log(`we have ${n} events`);
 
+		})
 	})
 
 	// make the titles the same size
