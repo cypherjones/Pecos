@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 	// })
 
 	ind = $('#event').index(this);
-	c = ind.length;
+	c = $('#event').length;
 	
 	console.log(c)
 
