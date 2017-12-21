@@ -38,11 +38,10 @@ jQuery(document).ready(function($){
 	// 		console.log(n);
 	// })
 
-	$('#the-event-loop').find('#event').each(function(){
+	$('#the-event-loop').find('#event').each(function(index, value){
 
-			var n = $(this).length
-
-		n++;
+			var n = index;
+		
 
 	console.log(`we have ${n} events`);
 
