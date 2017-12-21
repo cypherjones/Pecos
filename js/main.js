@@ -49,7 +49,7 @@ jQuery(document).ready(function($){
 
 		$(this).attr('foo', index);
 
-		console.log(index.length)
+		console.log(index);
 				
 	})
 
