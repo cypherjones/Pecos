@@ -47,7 +47,7 @@ jQuery(document).ready(function($){
 
 		n = $(this);
 
-		console.log(`${index} of ${c}`);
+		console.log(`${index}`);
 				
 	});
 
