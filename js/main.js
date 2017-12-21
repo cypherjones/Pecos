@@ -46,12 +46,13 @@ jQuery(document).ready(function($){
 		$(this).find('#event').each(function(index){
 
 			 $i = index;
+			 c = $(this);
 
 
 		console.log(`${$i}`);
 
 		})
-
+		console.log(c.length);
 				
 	})
 
