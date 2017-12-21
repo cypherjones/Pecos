@@ -40,13 +40,10 @@ jQuery(document).ready(function($){
 	// 		console.log(n);
 	// })
 
-	$('#the-event-loop').each(function(){
+	$('.page-id-67459').find('#the-event-loop #event').each(function(index, value){
 
-		$(this).find('#event', this).each(function(index, value){
-
-			console.log('foo');
-		})
-	
+		$(this).attr('foo', 'bar');
+				
 	})
 
 	// make the titles the same size
