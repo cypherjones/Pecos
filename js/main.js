@@ -42,7 +42,7 @@ jQuery(document).ready(function($){
 
 	$('#the-event-loop').each(function(){
 
-		$(this).find('#event').each(function(index, value){
+		$(this).find('#event', this).each(function(index, value){
 
 			console.log('foo');
 		})
