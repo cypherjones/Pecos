@@ -43,11 +43,9 @@ jQuery(document).ready(function($){
 		$(this).find('#event').each(function(index, value){
 
 			var n = index;
-		
-
-			console.log(`we have ${n} events`);
 
 		})
+		console.log(`we have ${n} events`);
 	})
 
 	// make the titles the same size
