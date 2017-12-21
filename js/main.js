@@ -41,20 +41,20 @@ jQuery(document).ready(function($){
 	// })
 
 	
-	$('.page-id-67459').find('#the-event-loop').each(function(index, value){
+	$('.page-id-67459').find('#the-event-loop #event').each(function(index, value){
 
-		$(this).find('#event').each(function(index){
+		$(this).attr('foo', index);
 
-			 $i = index;
-			 c = $(this);
+		n = $(this);
 
-
-		console.log(`${$i}`);
-
-		})
-		console.log(c.length);
+		console.log(`${index} of ${c}`);
 				
-	})
+	});
+
+	let t = n.length
+
+	console.log(`we have ${t}`);
+
 
 	// make the titles the same size
 	$('#the-event-loop').each(function(){
