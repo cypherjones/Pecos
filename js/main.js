@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 
 		$(this).attr('foo', index);
 
-		 let c = index++;
+		 let c = index.size();
 
 		console.log(`${index} of ${c}`);
 				
