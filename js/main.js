@@ -17,8 +17,8 @@ jQuery(document).ready(function($){
 					heightestBox = $(this).height();
 				}
 
-				$this = $(this).html();
-				console.log($this);
+				// $this = $(this).html();
+				// console.log($this);
 				
 			});
 
@@ -62,8 +62,8 @@ jQuery(document).ready(function($){
 					heightBox = $(this).height();
 				}
 
-				$this = $(this).html();
-				console.log($this);
+				// $this = $(this).html();
+				// console.log($this);
 				
 			});
 
