@@ -3,6 +3,8 @@
 
 jQuery(document).ready(function($){
 
+	let n;
+
 	$('#the-event-loop').each(function(){
 
 			
@@ -42,7 +44,7 @@ jQuery(document).ready(function($){
 
 		$(this).find('#event').each(function(index, value){
 
-			var n = index;
+			n = index;
 
 		})
 		console.log(`we have ${n} events`);
