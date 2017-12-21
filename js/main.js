@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 		});
 
-	$('#the-event-loop').each(function(){
+	$('#event').each(function(){
 			
 			// // cache the highest element
 			let heightestBox = 0;
