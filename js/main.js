@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
 
 			console.log('foo');
 		})
-		c
+	
 	})
 
 	// make the titles the same size
