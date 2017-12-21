@@ -38,7 +38,7 @@ jQuery(document).ready(function($){
 	// 		console.log(n);
 	// })
 
-	$('#the-event-loop'),find('#event').each(function(){
+	$('#the-event-loop').find('#event').each(function(){
 
 			var n = $(this).length
 
