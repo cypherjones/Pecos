@@ -40,6 +40,8 @@ jQuery(document).ready(function($){
 
 	var n = $('#event').length
 
+		n++;
+
 	console.log(`we have ${n} events`);
 
 	// make the titles the same size
