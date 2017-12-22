@@ -52,12 +52,7 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
-			num +=i;
-
-			do {
-				$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
-			} while ( num < 0 );
-			
+			$(`.event-container:lt(3)`).wrapAll('<div class="row"></div>');
 		};
 	};
 
