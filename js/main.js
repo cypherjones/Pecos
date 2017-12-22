@@ -59,7 +59,7 @@ jQuery(document).ready(function($){
 			$('.event-container').slice(i, inc).wrap('<div class="row"></div>');
 
 
-			console.log(inc);
+			console.log(inc + i);
 
 			// $('#the-event-loop').each(function(){
 
