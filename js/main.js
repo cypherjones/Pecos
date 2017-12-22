@@ -59,7 +59,7 @@ jQuery(document).ready(function($){
 		};
 	};
 
-$('#the-event-loop').find('.event-container:lt(3)').each(function(){
+$('#the-event-loop').find('.event-container').nextAll(':lt(3)').each(function(){
 
 				$(this).wrapAll('<div class="row"></div>');
 
