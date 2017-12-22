@@ -49,9 +49,13 @@ jQuery(document).ready(function($){
 
 		$s = $(this).length;
 
-		var start = Math.floor();
+		var start = $event,
+				end = ($event - start) + start + 1; 
+
 
 		console.log(`this ${$event} vs that ${index}`);
+
+		console.log(` ${start} to ${end}`);
 				
 	});
 
