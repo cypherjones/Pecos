@@ -54,7 +54,7 @@ jQuery(document).ready(function($){
 
 			$('#the-event-loop').find('.event-container:lt(3)').each(function(){
 
-				$(this).wrapALL('<div class="row"></div>');
+				$(this).wrapAll('<div class="row"></div>');
 
 			})
 
