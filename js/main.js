@@ -52,19 +52,17 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
-			i=+;
-
 			var inc = i + 3;
 
-			$('#the-event-loop').each(function(){
+			// $('#the-event-loop').each(function(){
 
-				$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
+			// 	$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
 
-			})
+			// })
 
 		};
 	};
-	console.log(i);
+	console.log(inc);
 
 
 	
