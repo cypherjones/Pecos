@@ -45,8 +45,7 @@ jQuery(document).ready(function($){
 
 		$(this).attr('id', `#event${index}`);
 
-
-		console.log(`${index}`);
+		$(this:lt(3)).wrapAll('<div class="row"></div>');
 				
 	});
 
@@ -63,10 +62,7 @@ jQuery(document).ready(function($){
 				// make the height of all the titles the heighest
 				if($(this).height() > heightBox) {
 					heightBox = $(this).height();
-				}
-
-				// $this = $(this).html();
-				// console.log($this);
+				};
 				
 			});
 
