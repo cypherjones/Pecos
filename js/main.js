@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
 
 	for (var i = 0; i < $events; i++) {
 		
-		while ( i % 3 === 0 ) {
+		if ( i % 3 === 0 ) {
 
 			var inc = i + 3;
 
