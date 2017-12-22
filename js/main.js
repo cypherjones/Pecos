@@ -69,7 +69,7 @@ jQuery(document).ready(function($){
 
 		};
 	};
-	$('.event-container').slice(0,3).wrapInner('<div class="row"></div>');
+	$('.event-container').slice(0,3).wrapAll('<div class="row"></div>');
 
 
 	// create and index and increment through the events
