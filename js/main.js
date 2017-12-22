@@ -49,11 +49,8 @@ jQuery(document).ready(function($){
 
 		$s = $(this).length;
 
-		var start = $event;
-
-		for (var i = $event; i > 0; i--) {
-			end = i;
-		}
+		var start = $event,
+				end = index--;
 
 		console.log(`this ${$event} vs that ${index}`);
 
