@@ -52,17 +52,18 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
-			$('#the-event-loop').find('.event-container:lt(3)').each(function(){
-
-				$(this).wrapAll('<div class="row"></div>');
-
-			})
+			console.log('foo');
 
 			// 
 
 		};
 	};
 
+$('#the-event-loop').find('.event-container:lt(3)').each(function(){
+
+				$(this).wrapAll('<div class="row"></div>');
+
+})
 	
 	
 
