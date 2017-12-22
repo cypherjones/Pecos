@@ -48,9 +48,10 @@ jQuery(document).ready(function($){
 		$(this).attr('id', `#event${index}`);
 
 		$s = $(this).length;
+		$i = index;
 
 		var start = $event,
-				end = index--;
+				end = $i--;
 
 		console.log(` ${start} to ${end}`);
 				
