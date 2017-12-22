@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 		// make the titles the same size
 	$('#the-event-loop').each(function(){
 
-			$('.event-container').slice(0, 3).wrap('<div class="row"></div>');
+			$('.event-container').slice(3).wrap('<div class="row"></div>');
 			
 			// // cache the highest element
 			let heightBox = 0;
