@@ -52,9 +52,9 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
-			$('#the-event-loop').find('.event-container').each(function(){
+			$('#the-event-loop').find('.event-container:lt(3)').each(function(){
 
-				$(`.event-container:lt(3)`).wrap('<div class="row"></div>');
+				$(this).wrapALL('<div class="row"></div>');
 
 			})
 
