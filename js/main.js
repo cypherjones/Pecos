@@ -50,8 +50,10 @@ jQuery(document).ready(function($){
 		$s = $(this).length;
 		$i = index;
 
-		var start = $event,
-				end = $event--;
+		var start = Math.floor($event),
+				end = Math.floor($event - $event--)
+
+				
 
 		console.log(`${start} to ${end}`);
 				
