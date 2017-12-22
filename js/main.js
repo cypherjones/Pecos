@@ -58,9 +58,9 @@ jQuery(document).ready(function($){
 	};
 	console.log(i);
 
-$('#the-event-loop').find('.event-container').each(function(){
+$('#the-event-loop').each(function(){
 
-				$(this).wrapAll('<div class="row"></div>');
+				$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
 
 })
 	
