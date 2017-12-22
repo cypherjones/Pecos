@@ -57,9 +57,9 @@ jQuery(document).ready(function($){
 			var inc = i + 3;
 
 			$('.event-container').slice(i, inc).wrap('<div class="row"></div>');
+			
 
-
-			console.log(inc + i);
+			console.log(`${inc} and ${i}`);
 
 			// $('#the-event-loop').each(function(){
 
