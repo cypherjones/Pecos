@@ -56,6 +56,12 @@ jQuery(document).ready(function($){
 
 			// console.log(inc);
 
+			let cut = $('#the-event-loop').find('.event-container:lt(3)').slice(3).html();
+
+		  let row = i;
+
+			console.log(row + cut);
+
 			// $('#the-event-loop').each(function(){
 
 			// 	$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
@@ -64,12 +70,6 @@ jQuery(document).ready(function($){
 
 		};
 	};
-
-	let cut = $('#the-event-loop').find('.event-container').slice(3).html();
-
-		  let row = i;
-
-			console.log(row + cut);
 	
 
 
