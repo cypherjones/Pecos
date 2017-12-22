@@ -51,16 +51,12 @@ jQuery(document).ready(function($){
 	// get a count of the number of events
 	$events = $('.event-container').length;
 
-	var n;
-	
-	while ( n < $events ) {
-		$('.event-container:lt(3)').slice(0, 3).wrapAll('<div class="row"></div>');
-	}
-
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
 			var inc = i + 3;
+
+			$('.event-container:lt(3)').slice(inc).wrapAll('<div class="row"></div>');
 
 			// console.log(inc);
 
