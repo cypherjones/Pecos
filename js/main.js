@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 
 		$(this).attr('id', `#event${index}`);
 
-		$(this:lt(3)).wrapAll('<div class="row"></div>');
+		$(this).find('.event-container').wrapAll('<div class="row"></div>');
 				
 	});
 
