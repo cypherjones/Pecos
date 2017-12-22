@@ -49,7 +49,7 @@ jQuery(document).ready(function($){
 
 		var start = Math.floor();
 
-		console.log(`this ${$s} vs that ${index}`);
+		console.log(`this ${$event} vs that ${index}`);
 				
 	});
 
