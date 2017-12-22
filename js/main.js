@@ -51,6 +51,8 @@ jQuery(document).ready(function($){
 	// get a count of the number of events
 	$events = $('.event-container').length;
 
+	var n;
+	
 	while ( n < $events ) {
 		$('.event-container:lt(3)').slice(0, 3).wrapAll('<div class="row"></div>');
 	}
