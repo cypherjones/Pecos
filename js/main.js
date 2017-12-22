@@ -52,7 +52,8 @@ jQuery(document).ready(function($){
 		var start = $event;
 
 		for (var i = 0; i > 0; i--) {
-			end = i;
+		  end = i;
+		  return end;
 		}
 
 		console.log(`this ${$event} vs that ${index}`);
