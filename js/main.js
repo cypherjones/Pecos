@@ -51,7 +51,7 @@ jQuery(document).ready(function($){
 			console.log('yest');
 		}
 
-		if (index.eq(1)) {
+		if (index === 1 ) {
 			console.log('we have one');
 		}
 				
