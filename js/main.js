@@ -50,8 +50,7 @@ jQuery(document).ready(function($){
 		$s = $(this).length;
 
 		var start = $event,
-				end = ($event - start) + start + 1; 
-
+				end = index - 1;
 
 		console.log(`this ${$event} vs that ${index}`);
 
