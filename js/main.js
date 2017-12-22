@@ -44,10 +44,10 @@ jQuery(document).ready(function($){
 	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
 
 		$(this).attr('id', `#event${index}`);
-
-		$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
 				
 	});
+
+	$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
 
 
 	// make the titles the same size
