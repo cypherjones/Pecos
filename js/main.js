@@ -52,14 +52,15 @@ jQuery(document).ready(function($){
 	$events = $('.event-container').length;
 
 	for (var i = 0; i < $events; i++) {
+		
 		if ( i % 3 === 0 ) {
 
 			var inc = i + 3;
 
-			// return i;
+			console.log(`${inc} and ${i}`);
 
+			$('#the-event-loop').closest('.event-container:lt(3)').wrapAll('<div class="row"></div>');
 
-			// console.log(`${inc} and ${i}`);
 
 			// $('#the-event-loop').each(function(){
 
@@ -68,7 +69,6 @@ jQuery(document).ready(function($){
 			// })
 
 		};
-		console.log(`${inc} and ${i}`);
 	};
 
 	$('.event-container').slice(0,3).wrapAll('<div class="row"></div>');
