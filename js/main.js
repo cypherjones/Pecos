@@ -44,6 +44,12 @@ jQuery(document).ready(function($){
 	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
 
 		$(this).attr('id', `#event${index}`);
+
+		// en = $(this);
+
+		if (index > 0 ) {
+			console.log('yest');
+		}
 				
 	});
 
