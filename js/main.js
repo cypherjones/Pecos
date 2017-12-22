@@ -70,18 +70,6 @@ jQuery(document).ready(function($){
 
 		};
 	};
-	
-l
-
-console.log(rows);
-
-	
-	
-
-	
-
-
-
 
 	// create and index and increment through the events
 	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
