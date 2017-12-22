@@ -59,9 +59,9 @@ jQuery(document).ready(function($){
 
 
 
+	f = 3;
 
-
-	$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
+	$(`.event-container:lt(${f})`).wrapAll('<div class="row"></div>');
 
 
 	// make the titles the same size
