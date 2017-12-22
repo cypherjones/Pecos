@@ -27,6 +27,8 @@ jQuery(document).ready(function($){
 
 		// make the titles the same size
 	$('#the-event-loop').each(function(){
+
+			$('.event-container').slice(0, 3).wrap('<div class="row"></div>');
 			
 			// // cache the highest element
 			let heightBox = 0;
@@ -56,12 +58,6 @@ jQuery(document).ready(function($){
 
 			// console.log(inc);
 
-		 	$('.event-container').slice(0, 3).wrap('<div class="row"></div>');
-
-		  let row = i;
-
-			console.log(row);
-
 			// $('#the-event-loop').each(function(){
 
 			// 	$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
@@ -70,6 +66,8 @@ jQuery(document).ready(function($){
 
 		};
 	};
+
+
 
 	// create and index and increment through the events
 	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
