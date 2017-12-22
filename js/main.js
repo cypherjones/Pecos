@@ -43,19 +43,12 @@ jQuery(document).ready(function($){
 	
 	$('.page-id-67459').find('#the-event-loop #event').each(function(index, value){
 
-		$(this).attr('foo', index);
+		$(this).attr('id', `#event${index}`);
 
-		n = $(this);
 
 		console.log(`${index}`);
-
-			let t = n.length
-
-	console.log(`we have ${t}`);
 				
 	});
-
-
 
 
 	// make the titles the same size
