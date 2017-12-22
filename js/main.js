@@ -50,7 +50,7 @@ jQuery(document).ready(function($){
 		$s = $(this).length;
 		$i = index;
 
-		var start = 1,,
+		var start = 1,
 				end = $events;
 
 				
