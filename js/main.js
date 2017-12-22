@@ -56,11 +56,15 @@ jQuery(document).ready(function($){
 
 			console.log(inc);
 
-			$('#the-event-loop').each(function(){
+			var row[i] = $('#the-event-loop').find('.event-container').slice(inc);
 
-				$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
+			console.log(row[i]);
 
-			})
+			// $('#the-event-loop').each(function(){
+
+			// 	$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
+
+			// })
 
 		};
 	};
