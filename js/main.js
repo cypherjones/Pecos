@@ -3,8 +3,6 @@
 
 jQuery(document).ready(function($){
 
-	let n;
-
 	$('#the-event-loop').each(function(){
 
 			
@@ -17,59 +15,21 @@ jQuery(document).ready(function($){
 				// make the height of all the titles the heighest
 				if($(this).height() > heightestBox) {
 					heightestBox = $(this).height();
-				}
-
-				// $this = $(this).html();
-				// console.log($this);
-				
+				};
 			});
 
-			// make an inline css based on the
-			// heighest title element
+			// make an inline css based on the heighest title element
 			$('.event-container', this).css({
 				'height': heightestBox,
 			});
 
 	});
 
-	// $('#the-event-loop').find('#event').each(function(num){
-	// 	// create rows for each loop of 3 events
-	// 		// $(this).wrapAll('<div class="row"></div>"');
-	// 		n = num;
-
-	// 		console.log(n);
-	// })
-	$events = $('.event-container').length;
-	
-	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
-
-		$(this).attr('id', `#event${index}`);
-
-		$s = $(this).length;
-		$i = index;
-
-		var start = 1,
-				end = $events;
-
-				
-
-		console.log(`${start} to ${end}`);
-				
-	});
-
-
-
-	f = 3;
-
-	$(`.event-container:lt(${f})`).wrapAll('<div class="row"></div>');
-
-
-	// make the titles the same size
+		// make the titles the same size
 	$('#the-event-loop').each(function(){
 			
 			// // cache the highest element
 			let heightBox = 0;
-			
 			// find each title and determine the highest
 			$(this).find('.event-container .event-meta .event-title', this).each(function(){
 				
@@ -77,11 +37,8 @@ jQuery(document).ready(function($){
 				if($(this).height() > heightBox) {
 					heightBox = $(this).height();
 				};
-				
 			});
-
-			// make an inline css based on the
-			// heighest title element
+			// make an inline css based on the heighest title element
 			$('.event-title', this).css({
 				'height': heightBox,
 			});
@@ -89,21 +46,30 @@ jQuery(document).ready(function($){
 		});
 
 
+	// get a count of the number of events
+	$events = $('.event-container').length;
 
-		// $('#event').each(function(){
-			
-		// 	// // cache the highest element
-		// 	let metaBox = 0;
-			
-		// 	// find each title and determine the highest
-		// 	$(this).find('.event-meta').each(function(){
-		// 		if( $(this).height() > 0) {
-		// 			console.log('yes');
-		// 		} else {
-		// 			console.log('no');
-		// 		}
-		// 	});
+	for (var i = $events; i >= 0; i++) {
+		if ( i % 3 == 0 ) {
+			console.log(i);
+		}
+	}
 
-		// });
+	if ( $events % 3 === 0 ) {
+		console.log('yes')
+	};
+	
 
+	$(`.event-container:lt(${f})`).wrapAll('<div class="row"></div>');
+
+
+
+
+	// create and index and increment through the events
+	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
+		// add an ID to each event based on the index
+		$(this).attr('id', `#event${index}`);
 	});
+
+
+});
