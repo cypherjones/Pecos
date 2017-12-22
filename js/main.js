@@ -45,17 +45,11 @@ jQuery(document).ready(function($){
 
 		$(this).attr('id', `#event${index}`);
 
-		// en = $(this);
-
-		if (index > 0 ) {
-			console.log('yest');
-		}
-
-		if (index === 1 ) {
-			console.log('we have one');
-		}
+		$s = $(this).length;
 
 		var start = Math.floor();
+
+		console.log(`this ${$s} vs that ${index}`);
 				
 	});
 
