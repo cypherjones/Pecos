@@ -56,10 +56,10 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
-			return i;
+			// return i;
 
 
-			console.log(`${inc} and ${i}`);
+			// console.log(`${inc} and ${i}`);
 
 			// $('#the-event-loop').each(function(){
 
