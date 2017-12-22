@@ -71,7 +71,9 @@ jQuery(document).ready(function($){
 		};
 	};
 	
+let rows = $events.slic(0, -3).html();
 
+console.log(rows);
 
 	
 	
