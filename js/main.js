@@ -54,13 +54,7 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
-			console.log(inc);
-
-			let cut = $('#the-event-loop').find('.event-container').slice(3).html();
-
-		  let row = i;
-
-			console.log(row + cut);
+			// console.log(inc);
 
 			// $('#the-event-loop').each(function(){
 
@@ -70,6 +64,12 @@ jQuery(document).ready(function($){
 
 		};
 	};
+
+	let cut = $('#the-event-loop').find('.event-container').slice(3).html();
+
+		  let row = i;
+
+			console.log(row + cut);
 	
 
 
