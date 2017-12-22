@@ -51,9 +51,9 @@ jQuery(document).ready(function($){
 		$i = index;
 
 		var start = $event,
-				end = $i--;
+				end = --$i;
 
-		console.log(` ${start} to ${end}`);
+		console.log(`${start} to ${end}`);
 				
 	});
 
