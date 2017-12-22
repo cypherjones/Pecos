@@ -54,8 +54,16 @@ jQuery(document).ready(function($){
 		if (index === 1 ) {
 			console.log('we have one');
 		}
+
+		var start = Math.floor();
 				
 	});
+
+	$event = $('.event-container').length;
+
+	console.log($event);
+
+
 
 	$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
 
