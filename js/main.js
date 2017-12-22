@@ -52,11 +52,11 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
-			num++;
+			i++;
 
 		};
 	};
-	return num;
+	console.log(i);
 
 $('#the-event-loop').find('.event-container').each(function(){
 
