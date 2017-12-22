@@ -51,7 +51,7 @@ jQuery(document).ready(function($){
 
 		var start = $event;
 
-		for (var i = 1; i > 0; i--) {
+		for (var i = 0; i > 0; i--) {
 			end = i;
 		}
 
