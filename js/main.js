@@ -50,6 +50,10 @@ jQuery(document).ready(function($){
 		if (index > 0 ) {
 			console.log('yest');
 		}
+
+		if (index.eq(1)) {
+			console.log('we have one');
+		}
 				
 	});
 
