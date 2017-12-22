@@ -56,11 +56,11 @@ jQuery(document).ready(function($){
 
 			// console.log(inc);
 
-			let cut = $('#the-event-loop').find('.event-container:lt(3)').slice(3).html();
+		 	$('.event-container').slice(0, 3).wrap('<div class="row"></div>');
 
 		  let row = i;
 
-			console.log(row + cut);
+			console.log(row);
 
 			// $('#the-event-loop').each(function(){
 
@@ -71,7 +71,7 @@ jQuery(document).ready(function($){
 		};
 	};
 	
-let rows = $('.event-container').slice(0, 3).wrap('<div class="row"></div>');
+l
 
 console.log(rows);
 
