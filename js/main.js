@@ -58,9 +58,9 @@ jQuery(document).ready(function($){
 
 			let cut = $('#the-event-loop').find('.event-container').slice(inc);
 
-		  let row += i + cut;
+		  let row += i cut;
 
-			console.log(row);
+			console.log(row + cut);
 
 			// $('#the-event-loop').each(function(){
 
