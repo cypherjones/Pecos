@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
-			$('.event-container:lt(3)').slice(inc).wrap('<div class="row"></div>');
+			$('.event-container:lt(3)').slice(0).wrap('<div class="row"></div>');
 
 			// console.log(inc);
 
