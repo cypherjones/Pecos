@@ -54,6 +54,8 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
+			console.log(inc);
+
 			// $('#the-event-loop').each(function(){
 
 			// 	$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
@@ -62,7 +64,7 @@ jQuery(document).ready(function($){
 
 		};
 	};
-	console.log(inc);
+	
 
 
 	
