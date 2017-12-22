@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 
 	// 		console.log(n);
 	// })
-	$event = $('.event-container').length;
+	$events = $('.event-container').length;
 
 	console.log($event);
 	
@@ -50,8 +50,8 @@ jQuery(document).ready(function($){
 		$s = $(this).length;
 		$i = index;
 
-		var start = Math.floor($event),
-				end = Math.floor($event - $event--)
+		var start = 1,,
+				end = $events;
 
 				
 
