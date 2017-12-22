@@ -51,7 +51,7 @@ jQuery(document).ready(function($){
 		$i = index;
 
 		var start = $event,
-				end = --$i;
+				end = $event--;
 
 		console.log(`${start} to ${end}`);
 				
