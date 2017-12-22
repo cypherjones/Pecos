@@ -56,11 +56,11 @@ jQuery(document).ready(function($){
 
 			console.log(inc);
 
-			// $('#the-event-loop').each(function(){
+			$('#the-event-loop').each(function(){
 
-			// 	$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
+				$(`.event-container:lt(${inc})`).wrapAll('<div class="row"></div>');
 
-			// })
+			})
 
 		};
 	};
