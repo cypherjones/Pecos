@@ -39,7 +39,9 @@ jQuery(document).ready(function($){
 
 	// 		console.log(n);
 	// })
+	$event = $('.event-container').length;
 
+	console.log($event);
 	
 	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
 
@@ -53,9 +55,7 @@ jQuery(document).ready(function($){
 				
 	});
 
-	$event = $('.event-container').length;
 
-	console.log($event);
 
 
 
