@@ -56,8 +56,8 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
-			$('.event-container').slice(i, inc).wrap('<div class="row"></div>');
-			
+			$('.event-container').slice(i, inc).wrapInner('<div class="row"></div>');
+
 
 			console.log(`${inc} and ${i}`);
 
