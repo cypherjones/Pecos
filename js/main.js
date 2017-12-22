@@ -41,11 +41,11 @@ jQuery(document).ready(function($){
 	// })
 
 	
-	$('.page-id-67459').find('#the-event-loop #event').each(function(index, value){
+	$('.page-id-67459').find('#the-event-loop .event-container').each(function(index, value){
 
 		$(this).attr('id', `#event${index}`);
 
-		$(this).find('.event-container:lt(3)').wrapAll('<div class="row"></div>');
+		$('.event-container:lt(3)').wrapAll('<div class="row"></div>');
 				
 	});
 
