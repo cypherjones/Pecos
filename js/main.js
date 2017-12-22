@@ -49,15 +49,13 @@ jQuery(document).ready(function($){
 	// get a count of the number of events
 	$events = $('.event-container').length;
 
-	for (var i = $events; i >= 0; i++) {
-		if ( i % 3 == 0 ) {
-			console.log(i);
-		}
-	}
-
-	if ( $events % 3 === 0 ) {
+	for (var i = 0; i < $events; i++) {
+		if ( i % 3 === 0 ) {
 		console.log('yes')
+		};
 	};
+
+	
 	
 
 	$(`.event-container:lt(${f})`).wrapAll('<div class="row"></div>');
