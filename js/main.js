@@ -68,10 +68,9 @@ jQuery(document).ready(function($){
 			// })
 
 		};
-
+		console.log(`${inc} and ${i}`);
 	};
-	console.log(`${inc} and ${i}`);
-	
+
 	$('.event-container').slice(0,3).wrapAll('<div class="row"></div>');
 
 
