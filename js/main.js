@@ -71,7 +71,7 @@ jQuery(document).ready(function($){
 		};
 	};
 	
-let rows = $('.event-container').slice(0, -3).html();
+let rows = $('.event-container').slice(0, -3).wrap('<div class="row"></div>');
 
 console.log(rows);
 
