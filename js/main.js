@@ -48,12 +48,14 @@ jQuery(document).ready(function($){
 		n = $(this);
 
 		console.log(`${index}`);
+
+			let t = n.length
+
+	console.log(`we have ${t}`);
 				
 	});
 
-	let t = n.length
 
-	console.log(`we have ${t}`);
 
 
 	// make the titles the same size
