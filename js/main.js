@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
 
 			console.log(inc);
 
-			let cut = $('#the-event-loop').find('.event-container').slice(inc);
+			let cut = $('#the-event-loop').find('.event-container').slice(inc).html();
 
 		  let row = i;
 
