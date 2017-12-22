@@ -52,14 +52,13 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
 
-			console.log('foo');
-
-			// 
+			num++;
 
 		};
 	};
+	return num;
 
-$('#the-event-loop').find('.event-container').nextAll(':lt(3)').each(function(){
+$('#the-event-loop').find('.event-container').each(function(){
 
 				$(this).wrapAll('<div class="row"></div>');
 
