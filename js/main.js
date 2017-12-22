@@ -27,8 +27,6 @@ jQuery(document).ready(function($){
 
 		// make the titles the same size
 	$('#the-event-loop').each(function(){
-
-			$('.event-container:lt(3)').slice(0, 3).wrapAll('<div class="row"></div>');
 			
 			// // cache the highest element
 			let heightBox = 0;
@@ -48,8 +46,14 @@ jQuery(document).ready(function($){
 		});
 
 
+
+
 	// get a count of the number of events
 	$events = $('.event-container').length;
+
+	while ( n < $events ) {
+		$('.event-container:lt(3)').slice(0, 3).wrapAll('<div class="row"></div>');
+	}
 
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
