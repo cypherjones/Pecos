@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
-			
+			$('.event-container').slice(0,3).wrapAll('<div class="row"></div>');
 
 
 			console.log(`${inc} and ${i}`);
@@ -69,7 +69,7 @@ jQuery(document).ready(function($){
 
 		};
 	};
-	$('.event-container').slice(0,3).wrapAll('<div class="row"></div>');
+	
 
 
 	// create and index and increment through the events
