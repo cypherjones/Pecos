@@ -56,6 +56,8 @@ jQuery(document).ready(function($){
 
 			console.log(inc);
 
+			let row;
+
 		 row += i + $('#the-event-loop').find('.event-container').slice(inc);
 
 			console.log(row);
