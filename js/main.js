@@ -51,14 +51,14 @@ jQuery(document).ready(function($){
 
 	for (var i = 0; i < $events; i++) {
 		if ( i % 3 === 0 ) {
-		console.log('yes')
+			$(`.event-container:lt(${i})`).wrapAll('<div class="row"></div>');
 		};
 	};
 
 	
 	
 
-	$(`.event-container:lt(${f})`).wrapAll('<div class="row"></div>');
+	
 
 
 
