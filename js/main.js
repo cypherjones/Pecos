@@ -56,9 +56,10 @@ jQuery(document).ready(function($){
 
 			var inc = i + 3;
 
-			
+			$('.event-container:lt(3)').slice(i, inc).wrap('<div class="row"></div>');
 
-			// console.log(inc);
+
+			console.log(inc);
 
 			// $('#the-event-loop').each(function(){
 
@@ -68,7 +69,7 @@ jQuery(document).ready(function($){
 
 		};
 	};
-$('.event-container:lt(3)').slice(0).wrap('<div class="row"></div>');
+	
 
 
 	// create and index and increment through the events
